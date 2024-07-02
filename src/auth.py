@@ -16,7 +16,8 @@ from config import config
 import cloudinary
 import cloudinary.uploader
 from src.database.models import User
-from send_email import send_email
+from src.send_email import send_email
+
 
 router = APIRouter(prefix='/auth', tags=['auth'])
 get_refresh_token = HTTPBearer()
